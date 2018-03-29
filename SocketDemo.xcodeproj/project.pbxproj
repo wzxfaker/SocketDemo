@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844E23DA206CD6D40059716C /* XNativeSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E23D9206CD6D40059716C /* XNativeSocketManager.m */; };
+		844E23DD206CE4770059716C /* XAsyncSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E23DC206CE4770059716C /* XAsyncSocketManager.m */; };
+		844E23E0206CE48A0059716C /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E23DE206CE48A0059716C /* GCDAsyncSocket.m */; };
 		845E9839206B8EA600B6CAD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E9838206B8EA600B6CAD9 /* AppDelegate.m */; };
 		845E983C206B8EA600B6CAD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E983B206B8EA600B6CAD9 /* ViewController.m */; };
 		845E983F206B8EA600B6CAD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845E983D206B8EA600B6CAD9 /* Main.storyboard */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844E23D8206CD6D40059716C /* XNativeSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNativeSocketManager.h; sourceTree = "<group>"; };
+		844E23D9206CD6D40059716C /* XNativeSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNativeSocketManager.m; sourceTree = "<group>"; };
+		844E23DB206CE4770059716C /* XAsyncSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAsyncSocketManager.h; sourceTree = "<group>"; };
+		844E23DC206CE4770059716C /* XAsyncSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAsyncSocketManager.m; sourceTree = "<group>"; };
+		844E23DE206CE48A0059716C /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		844E23DF206CE48A0059716C /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		845E9834206B8EA600B6CAD9 /* SocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845E9837206B8EA600B6CAD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		845E9838206B8EA600B6CAD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,7 +114,13 @@
 				845E9838206B8EA600B6CAD9 /* AppDelegate.m */,
 				845E983A206B8EA600B6CAD9 /* ViewController.h */,
 				845E983B206B8EA600B6CAD9 /* ViewController.m */,
+				844E23D8206CD6D40059716C /* XNativeSocketManager.h */,
+				844E23D9206CD6D40059716C /* XNativeSocketManager.m */,
+				844E23DB206CE4770059716C /* XAsyncSocketManager.h */,
+				844E23DC206CE4770059716C /* XAsyncSocketManager.m */,
 				845E983D206B8EA600B6CAD9 /* Main.storyboard */,
+				844E23DF206CE48A0059716C /* GCDAsyncSocket.h */,
+				844E23DE206CE48A0059716C /* GCDAsyncSocket.m */,
 				845E9840206B8EA600B6CAD9 /* Assets.xcassets */,
 				845E9842206B8EA600B6CAD9 /* LaunchScreen.storyboard */,
 				845E9845206B8EA600B6CAD9 /* Info.plist */,
@@ -265,6 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844E23E0206CE48A0059716C /* GCDAsyncSocket.m in Sources */,
+				844E23DA206CD6D40059716C /* XNativeSocketManager.m in Sources */,
+				844E23DD206CE4770059716C /* XAsyncSocketManager.m in Sources */,
 				845E983C206B8EA600B6CAD9 /* ViewController.m in Sources */,
 				845E9847206B8EA600B6CAD9 /* main.m in Sources */,
 				845E9839206B8EA600B6CAD9 /* AppDelegate.m in Sources */,
@@ -432,6 +450,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NDM2JAGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketDemo",
+				);
 				INFOPLIST_FILE = SocketDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XTech.SocketDemo;
@@ -446,6 +468,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NDM2JAGC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketDemo",
+				);
 				INFOPLIST_FILE = SocketDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XTech.SocketDemo;
